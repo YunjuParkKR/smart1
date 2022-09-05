@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input 태그의 속성</title>
+	<style type="text/css">
+		#title {
+			width: 600px;
+			height: 100px;
+		}
+		
+		#body {
+			width: 600px;
+			height: 100px;
+			resize: none;
+		}
+		#id, #body {
+			display: inline-block;
+			width: 20%;
+		}
+	</style>
+</head>
+
+<body>
+	<form method="post" action="result.html">
+		<!-- input 태그는 in-line 태그임 -->
+		<input type="text" id="title" name="title" placeholder="제목을 입력하세요!" required> 
+		<!-- placeholder: input해야하는 영역에 문자열을 연하게 출력해주는 속성.
+			required: 이 태그에 아무 것도 입력되지 않을 시 내용을 서버에 전달하지 마시오 -->
+		<textarea name="body" id="body" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+		<!-- name 속성은 데이터를 꺼낼 때, 그 데이터의 식별자(구별자)로서 사용한다. 
+			이름을 모르면 부를 수 없듯이, name 속성을 필수로 적어주지 않으면 해당 데이터를 꺼낼 수가 없게 된다.
+			그러므로 입력태그 계열에는(button태그들 빼고) 반드시 name 속성을 적어 줄 것!!! -->
+		<!-- 주의할 점은, textarea 영역에 엔터를 쳐서 텍스트를 입력하여 제출할 경우
+			줄바꿈 문자(\r\n)도 같이 서버에 전달된다는 점이다.  
+				\r: carrage return 맨 앞으로 보낸다
+				\n: 다음 줄로???-->
+		<br>
+		<input type="submit" value="제출">
+		<br>
+		<!-- [나혼자테스트] value에서는 줄바꿈(\r\n)이 그대로 나타나는데, div에 똑같이 붙여넣어 출력했을 경우
+							: 줄바꿈이 표시되지 않고, 줄바꿈은 공백 하나로 처리되어 1 1 1 1 1 과 같이 출력된다.
+							  근데 왜 해보니까 안 돼????? -->
+		<input type="text" value="1\r\n1\r\n1\r\n1\r\n1" name="test">
+		<div>1\r\n1\r\n1\r\n1\r\n1</div>
+	</form>
+</body>
+</html>

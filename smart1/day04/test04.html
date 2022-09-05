@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baby Shark Song</title>
+<style type="text/css">
+	.content {
+		margin: 0px auto;
+		text-align: center;	
+		width: 50%;
+	}
+</style>
+</head>
+
+<body>
+	<div class="content">
+		<h1 style="background-color: purple; color: white; padding: 10px; font-size: 42px;">아기상어송 자동재생</h1>
+		<video src="../video/movie.mov"  controls loop autoplay width="500px" height="auto"></video>
+		<hr>
+		<h1 style="background-color: purple; color: white; padding: 10px; font-size: 42px;">다중 재생</h1>
+		<video controls loop autoplay width="500px" height="auto">
+			<source src="../video/movie.mp4" type="video/mpeg">
+			<source src="../video/movie.avi" type="video/x-msvideo">
+			<source src="../video/movie.mov">
+			비디오 파일을 재생할 수 없습니다.
+		</video>
+		<hr>
+		<h1 style="background-color: purple; color: white; padding: 10px; font-size: 42px;">형식에 맞는 비디오 파일이 없을 시</h1> <!-- 왜 안 돼??? -->
+		<video controls loop autoplay width="500px" height="auto">
+			<source src="../video/movie.mp4">
+			<source src="../video/movie.avi">
+			비디오 파일을 재생할 수 없습니다. <!-- 왜 이 문구가 화면에 프린트되지 않는 거지? -->
+		</video>
+		<hr>
+		<h1 style="background-color: purple; color: white; padding: 10px; font-size: 42px;">loop 속성 넣지 않을 시</h1> <!-- OK -->
+		<video controls autoplay width="500px" height="auto">
+			<source src="../video/movie.mp4" type="video/mpeg">
+			<source src="../video/movie.avi" type="video/x-msvideo">
+			<source src="../video/movie.mov">
+			비디오 파일을 재생할 수 없습니다.
+		</video>
+		<hr>
+		<h1 style="background-color: purple; color: white; padding: 10px; font-size: 42px;">autoplay 속성 넣지 않을 시</h1> <!-- autoplay기능이 안 됨 -->
+		<video controls loop width="500px" height="auto">
+			<source src="../video/movie.mp4" type="video/mpeg">
+			<source src="../video/movie.avi" type="video/x-msvideo">
+			<source src="../video/movie.mov">
+			비디오 파일을 재생할 수 없습니다.
+		</video>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radio, Checkbox</title>
+	<style type="text/css">
+		.content {
+			width: 50%;
+			margin: 0px auto;	
+		}
+		.title {
+			background-color: pink;
+			padding: 15px;
+			text-align: center;		
+		}
+		.lbl {
+			display: inline-block;
+			width: 28%;
+			text-align: right;
+		}
+		.fr {
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+		.gfr {
+			display: inline-block;
+			width: 70%;
+			position: relative;
+		}
+		.btn {
+			width: 32%;
+			height: 40px;
+			font-size: 16px;
+		}
+		#btn1 {
+			background-color: green;
+			color: white;
+		}
+		#btn2 {
+			background-color: blue;
+			color: white;
+		}
+		#btn3 {
+			background-color: red;
+			color: white;
+		}
+		.bfr {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="content">
+			<h1 class="title">Radio, Checkbox Tag</h1>
+			<form method="POST" action="result.html" name="frm" id="frm">
+				<label class="lbl">성 별 : </label>
+				<div class="gfr">
+					<div class="fr">
+						<input type="radio" name="gen" value="W"><span>여자</span>
+					</div>
+					<div class="fr">
+						<input type="radio" name="gen" value="M"><span>남자</span>
+					</div>
+				</div>
+				
+				<div style="text-align: center;">
+					<input type="radio" name="grade" value="1">1학년<br>
+					<input type="radio" name="grade" value="2">2학년<br>
+					<input type="radio" name="grade" value="3">3학년<br>
+					<input type="radio" name="grade" value="4">4학년
+				</div>
+				
+				<div class="bfr">
+					<input type="button" class="btn" id="btn1" value="home">
+					<input type="reset" class="btn" id="btn2" value="reset">
+					<input type="submit" class="btn" id="btn3" value="submit">
+				</div>
+			</form>
+		</div>	
+</body>
+</html>

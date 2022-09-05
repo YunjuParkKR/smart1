@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- Form도 하나 만들어 보자. -->
+<meta charset="UTF-8">
+<title>✨Yunju Park✨ </title> <!-- title에서는 이탤릭체 등 사용 불가능한가??? -->
+	<style type="text/css">
+	/* 
+	p { 폰트 설정 어케 하는 거임??? 폰트는 민감함. 
+		1. 컴퓨터에 따라 설치되어 있지 않은 컴퓨터에서는 적용되지 않기 때문에...
+		2. 저작권에 예민하여... 
+	}
+	@font-face {
+		font-family: 'MaruBuri-Light';
+		src: local('MaruBuri-Light') format('woff');
+	} 
+	*/
+	
+	#titlemenu {
+		background-color: white;
+		width: 100%;
+		position: fixed;
+	}
+	
+	#body, #home, #about, #like, #contact {padding: 1%}
+		#body {
+			text-align: center;
+			font-style: italic;
+		}
+		#home {
+			background-color: #FFF0F5;
+			height: 800px;
+		}
+		#about {
+			background-color: #FFFFF0;
+			height: 800px;			
+		}
+		#like {
+			background-color: #F5FFFA;
+			height: 800px;
+		}
+		#contact {
+			background-color: #F8F8FF;
+			height: 800px;
+		}
+		#btm {
+			
+		}
+		
+		#like1, #like2, #like3, #like4, #like5, #like6 {
+			display: inline-block;
+		}
+		
+		/* 프로필 이미지 테두리 타원형으로 처리하는 것 잘 모르겠음......
+		.box {
+			border-radius: 50%;
+			overflow: hidden;
+		} 
+		*/
+		
+		.subtitles {
+			text-shadow: 5px 5px 2px lightgray;
+		}
+		
+	</style>
+</head>
+
+
+<body id="body">
+	<div id="titlemenu">
+		<h1 class="subtitles"> ✨<i>Yunju Park </i>✨ </h1>
+		
+		<h4>
+			<a href="#home"><i>Home</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a href="#about"><i>About</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a href="#like"><i>What I like</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a href="#contact"><i>Contact</i></a> 
+		</h4>
+	</div>
+	
+	<hr size="3" align="center" width=95% style="background-color: #ebebe0; border: 0px;"> 
+	
+	<header id="home">
+		<div style="height: 100px;"><p/></div>
+		<br>
+		<h3 class="subtitles"><i>Welcome!</i></h3>
+			<img src="https://mblogthumb-phinf.pstatic.net/MjAxNjEyMTdfMjcw/MDAxNDgxOTQ2OTY1MDQ5.kCisUUmfiowp88cgGBMqv6puOUtjxVjNiRbK1tEJ1zog.eHkmEgL-kbhMFTcBmiTr4nTQCJM5SYTpdmnNfKaoZ-Mg.PNG.dudgusbb/ppa665.png?type=w2"
+				style="width: 1000px; height: 400px;"
+				title= "Hard times are golden, cause they all lead to better days.">
+			<p style="color: lightgray;"><i><small>Please scroll down or click the menu above :)</small></i></p>
+		<br>
+		<a href="#footer" style="color: white;"><small>&DownArrowBar; bottom</small></a>
+	</header>
+<br>
+
+	<section id="about"> 
+	<!-- position: relative top: Npx 위에서부터 몇 픽셀 떨어트리기 속성. 
+					마진탑은 이후 태그에 영향을 미쳐서 별로 좋은 방법이 아님  -->
+		<div style="height: 100px;"><p/></div>
+		<br>
+		<h3 class="subtitles"><i>About</i></h3>
+			<div class="box">
+				<img src="../img/Yunju01.jpg" style= "width: 350px; height: auto; float: left; margin-left: 100px; margin-top: 30px;"> 
+			</div>
+			<div style="font-size: 15px; text-align: center; margin-top: 30px;"> <!-- 위 공간을 띄우고 싶어서 마진탑 썼는데 왜 안 되지??? -->
+				<br>
+				<br>
+				<br>
+				<p>박윤주</p>
+				<br>
+				<p>Aug.17</p>
+				<br>
+				<p>경남 창원</p>
+				<br>
+				<p><del>I<span style= "color: red;">N</span>FP</del> &rightarrow; I<span style= "color: red;">S</span>FP</p>
+				<br>
+				<p>국어국문학 전공</p>
+				<br>
+				<p>커리어 전환 목표</p>
+			</div>
+	</section>
+<br>
+
+	<section id="like">
+		<div style="height: 100px;"><p/></div>
+		<br>
+		<h3 class="subtitles"><i>What I like</i></h3>
+		<div id="firstrow">
+			<figure id="like1">
+				<img src="../img/coffee.jpg" style="width: 200px; height: 200px" title="커피">
+				<figcaption>☕</figcaption>
+			</figure>
+			<figure id="like2">
+				<img src="../img/food.jpg" style="width: 200px; height: 200px" title="맛있는 것 먹기">
+				<figcaption>😋</figcaption>
+			</figure>
+			<figure id="like3"> <!-- '귀여운 건 한 번 더 보자: 이미지 클릭 시 토리 사진 한 장 더 뜨도록 설정하기.
+										a href를 중첩시키면 과연 두 개 다 정상작동 할까? 
+										클릭 시 사이트 등으로 이동하는 것이 아닌 토리 사진만 뜨도록 하려면 어떻게?-->
+				<a href="tori again.html" target="_blank" javascript:alert('귀여운 건 한 번 더 보자💛')">
+					<img src="../img/tori_02.jpg" style="width: 200px; height: 200px" title="동물"></a>
+				<figcaption>🐈</figcaption>
+			</figure>	
+		</div>
+		<br>
+		<div id="secondrow">
+			<figure id="like4">
+				<img src="../img/traveling.jpg" style="width: 200px; height: 200px" title="여행">
+				<figcaption>🛫</figcaption>
+			</figure>
+			<figure id="like5">	
+				<img src="../img/diving.jpg" style="width: 200px; height: 200px" title="액티비티">
+				<figcaption>🏄‍♀️</figcaption>
+			</figure>
+			<figure id="like6">
+				<img src="../img/tennis.jpg" style="width: 200px; height: 200px" title="테니스">
+				<figcaption>🎾</figcaption>
+			</figure>	
+		</div>
+	</section>
+<br>
+
+	<section id="contact">
+		<div style="height: 100px;"><p/></div>
+		<br>
+		<h3 class="subtitles"><i>Contact</i></h3>
+			<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMDdfMjk2/MDAxNDg2NDEyNzM1MjY3.VxZjrJaaBPSClvZauVFCKcor8nwXzOm4gC_rOB2ogfkg.W3q9rkEY-O114WzvCuxDs7_nbYcf3ULFMJvP98AFa-Ig.JPEG.blingduk7/9.jpg?type=w800"
+				style="width: 1000px; height: 400px;'">
+			<p><a href="javascript:alert('❗  준비중입니다.')"><img src="../img/insta.png" width="15px" height="auto"></a>
+						<a href="javascript:alert('❗  준비중입니다.')"><img src="../img/facebook.png" width="23px" height="auto"></a>
+						<a href="javascript:alert('❗  준비중입니다.')"><img src="../img/youtube.png" width="20px" height="auto"></a>
+			</p>	
+			<p style="font-size: 10px;">📞&nbsp; +82 10 4199 0535</p>
+			<p style="font-size: 10px;">📧 &nbsp; <a href="mailto:yunju9408@gmail.com">yunju9408@gmail.com</a></p>
+			<p style="font-size: 10px;">🏠 &nbsp; Sillim-dong, Gwanak-Gu, Seoul, Korea</p>	
+	</section>
+<br>
+
+	<hr size="3" align="center" width=95% style="background-color: #ebebe0; border: 0px;"> 
+	
+	<br>
+	<a href="#body"><small>&UpArrowBar; top</small></a>
+	<br>
+	<br>
+	
+	<footer id="footer">
+		<small>Created by Yunju Park<br>
+			&nbsp;&nbsp;&nbsp; &copy; Yunju Park &nbsp;&nbsp;&nbsp; &reg;2022 all right reserved.</small>
+	</footer>
+
+</body>
+</html>

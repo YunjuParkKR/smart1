@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Caption</title>
+<style type="text/css"> /* 작성 형식이 문자 형식으로 되어있고, css 타입으로 작성된다는 뜻. */
+	.content {
+		display: inline-block;
+		margin: 0px auto;
+		text-align: center;
+		width: 50%;
+	}
+	img {
+		width: 300px;
+		height: auto;
+	}
+</style>
+</head>
+
+<body>
+	<div class="content">
+		<h1 style="background-color: purple; color: #FFFFFF;">이미지 제목 추가</h1>
+		<figure>
+			<img src="../img/html5.png" alt="HTML5 Logo" title="HTML5">
+			<figcaption>[ 그림1 ] HTML5</figcaption>
+		</figure>
+		<figure>
+			<figcaption>[ 그림2 ] CSS3</figcaption>
+			<img src="../img/css3.png" alt="CSS3 Logo" title="CSS3">
+		</figure>
+	</div>
+</body>
+</html>

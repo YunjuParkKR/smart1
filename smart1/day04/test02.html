@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Tag Link</title>
+	<style type="text/css">
+
+		.content {
+			/* margin에 속성값이 2개 있는 경우: 첫번째 값이 위아래값, 두번째 값이 좌우값 */
+			/* margin에 속성값이 3개 있는 경우: 첫번째 값이 윗값top, 두번째 값이 좌우값, 세번째 값이 아랫값bottom */
+			/* margin에 속성값이 4개 있는 경우: 첫번째 값이 윗값top, 두번째 값이 우값right, 세번째 값이 아랫값bottom, 네번째 값이 좌값left (시계방향) */
+			margin: 0px auto; /* 남는 가로 폭 50%를 자동으로 margin으로 남겨서 배치하시오 라는 뜻. */
+			width: 50%;
+			text-align: center;
+		}
+		/* 버튼태그 스타일 */
+		.btn {
+			display: inline-block;
+			width: 150px;
+			height: 25px;
+			background-color: orange;
+			border: 3px dotted lightgray;
+		}
+		a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="side"><p/></div>
+	<div class="content">
+		<h1 style="background-color: purple; color: white; padding: 20px;">Image Tag Link</h1>
+		<div>
+			<a href="https://www.w3schools.com/html/default.asp" style="font-size: 0pt;" target="_blank">
+			<!-- font-size: 0pt;
+				==> 하위의 모든 태그들은 텍스트 크기가 0으로 세팅된다.
+					따라서 추가되는 텍스트는 모두 크기를 가지지 않는다. -->
+				<img src="../img/html5.png" width="100px" height="auto">
+			</a>
+		</div>
+		<hr>
+		<div>
+			<a href="../day03/test01.html" target="_blank">
+				<div class="btn">test01.html</div>
+			</a>
+			<a href="../day03/test02.html" target="_blank">
+				<div class="btn">test02.html</div>
+			</a>
+			<a href="../day03/test03.html" target="_blank">
+				<div class="btn">test03.html</div>
+			</a>
+			<a href="../day03/test04.html" target="_blank">
+				<div class="btn">test04.html</div>
+			</a>
+			<a href="../day03/test05.html" target="_blank">
+				<div class="btn">test05.html</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
