@@ -4,24 +4,30 @@
 <meta charset="UTF-8">
 <title>Naver 오늘 읽을만한 글</title>
 	<style type="text/css">
-		body {
-			padding: 20px;
+		.content {
+			width: 90%;
+			margin: 0px auto;
 		}
 		#bigtitle {
 			display: inline-block;
-			width: 200px;
+			width: 170px;
 		}
 		#subtitle {
 			color: gray;
+			font-size: 13px;
 		}
 		#righttitle {
+			position: relative;
+			top: 27px;
+			right: 0px;
 			display: inline-block;
-			width: 250px;
+			width: 188px;
 			float: right;
+			font-size: 13px;
 		}
 		.section {
 			display: inline-block;
-			width: 90%;
+			width: 100%;
 		}
 		.button {
 			display: block;
@@ -37,16 +43,16 @@
 		#rbtn1 {
 			position: relative;
 			bottom: 35px;
-			left: -17px;
+			left: -16px;
 		}
-		#rbtn2 { /* 위 rbtn1처럼 위치 설정하기!!! */
+		#rbtn2 { /* 아직 position - relative, absolute 속성 잘 이해 안 됨 ㅠㅠ */
 			position: relative;
-			top: 0px;
-			right: 0px;
-			z-index: 0;
+			bottom: 35px;
+			left: 1286px;
+			/* z-index: 0; 위치 설정하려고 z-index를 넣었으나, 위 position, bottom, left/right으로 하기로 함...*/
 		}
 		.btn {
-			width: 13%;
+			width: 14.1%;
 			height: 40px;
 			background-color: white;
 			border: 1px solid gray;
@@ -94,7 +100,7 @@
 		}
 		.section3-1, .section3-2, .section3-3 {
 			display: inline-block;
-			width: 30%;
+			width: 33%;
 			text-align: center;
 			float: left;
 		}
@@ -111,10 +117,11 @@
 
 
 <body>
-	<header>
-	<h3 id="bigtitle">오늘 읽을만한 글 한 줄</h3>
-	<span id="subtitle">주제별로 분류된 다양한 글 모음</span>
-	<span id="righttitle"><b>668</b>개의 글 &boxv; 관심주제 설정</span>
+<div class="content">
+	<header id="title">
+		<h4 id="bigtitle">오늘 읽을만한 글 한 줄</h4>
+		<span id="subtitle">주제별로 분류된 다양한 글 모음</span>
+		<span id="righttitle"><b>668</b>개의 글 &boxv; 관심주제 설정</span>
 	</header>
 	
 	<section class="section">
@@ -237,5 +244,6 @@
 	<footer>
 	
 	</footer>
+</div>
 </body>
 </html>

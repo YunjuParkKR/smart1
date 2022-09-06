@@ -1,0 +1,25 @@
+/* CSS 가상 선택자 복습 (9/6/화) */
+
+/* 방문하지 않았던 링크를 표시함 */
+a:link { color: black; }
+
+/* 방문한 링크를 표시함 */
+a:visited { color: deeppurple; }
+
+/* 링크를 클릭하는 순간 나타남 
+	--> 왜 안 나타나지? */
+a:active { color: lime; }
+
+/* 링크에 마우스 포인터를 올리는 순간 나타남 */
+a:hover { color: pink; }
+
+/* 해당 요소에 초점이 맞춰졌을 때 적용됨 
+	--> 실제로는 클릭할 때(마우스 버튼을 
+		누르고 있는 동안 계속) 나타나는 것 같은데? */
+a:focus { color: red; }
+
+
+/* 상단 각 menu에 마우스를 올릴 경우 효과 주기 */
+.menu:hover {
+	font-size: 15pt;
+}

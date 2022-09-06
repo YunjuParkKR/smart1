@@ -3,6 +3,7 @@
 <head> <!-- Form도 하나 만들어 보자. -->
 <meta charset="UTF-8">
 <title>✨Yunju Park✨ </title> <!-- title에서는 이탤릭체 등 사용 불가능한가??? -->
+	<link type="text/css" rel="stylesheet" href="../css/Yunju Park_event class.css">
 	<style type="text/css">
 	/* 
 	p { 폰트 설정 어케 하는 거임??? 폰트는 민감함. 
@@ -38,13 +39,18 @@
 			background-color: #F5FFFA;
 			height: 800px;
 		}
+		#skills {
+			background-color: #F0F8FF;
+			height: 800px;
+		}
 		#contact {
 			background-color: #F8F8FF;
 			height: 800px;
 		}
-		#btm {
-			
-		}
+/* 		#footer {
+			display: block;
+			float: bottom;
+		} */
 		
 		#like1, #like2, #like3, #like4, #like5, #like6 {
 			display: inline-block;
@@ -70,10 +76,11 @@
 		<h1 class="subtitles"> ✨<i>Yunju Park </i>✨ </h1>
 		
 		<h4>
-			<a href="#home"><i>Home</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
-			<a href="#about"><i>About</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
-			<a href="#like"><i>What I like</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
-			<a href="#contact"><i>Contact</i></a> 
+			<a class="menu" href="#home"><i>Home</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a class="menu" href="#about"><i>About</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a class="menu" href="#like"><i>What I like</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a class="menu" href="#skills"><i>Skills</i></a> &nbsp;&nbsp;&nbsp;&VerticalSeparator;&nbsp;&nbsp;&nbsp;
+			<a class="menu" href="#contact"><i>Contact</i></a> 
 		</h4>
 	</div>
 	
@@ -159,6 +166,32 @@
 	</section>
 <br>
 
+ 	<section id="skills">
+ 		<div style="height: 100px;"><p/></div>
+		<br>
+		<br>
+		<h3 class="subtitles"><i>Skills</i></h3>
+			<div class="box">
+				<img src="../img/tori_03.jpg" style= "width: 350px; height: auto; float: left; margin-left: 100px; margin-top: 30px;"> 
+			</div>
+			<div style="font-size: 15px; text-align: center; margin-top: 30px;"> <!-- 위 공간을 띄우고 싶어서 마진탑 썼는데 왜 안 되지??? -->
+				<br>
+				<br>
+				<br>
+				<p>컴퓨터활용능력</p>
+				<br>
+				<p>정보처리기사</p>
+				<br>
+				<p>TOEIC, TOEIC SPEAKING</p>
+				<br>
+				<p>Language</p>
+				<br>
+				<p>HTML5</p>
+				<br>
+				<p>JavaScript</p>
+			</div>
+	</section>
+ 	<br>
 	<section id="contact">
 		<div style="height: 100px;"><p/></div>
 		<br>
@@ -174,17 +207,17 @@
 			<p style="font-size: 10px;">🏠 &nbsp; Sillim-dong, Gwanak-Gu, Seoul, Korea</p>	
 	</section>
 <br>
+ 	</section>
 
 	<hr size="3" align="center" width=95% style="background-color: #ebebe0; border: 0px;"> 
-	
+		
+	<footer id="footer">
 	<br>
 	<a href="#body"><small>&UpArrowBar; top</small></a>
 	<br>
 	<br>
-	
-	<footer id="footer">
 		<small>Created by Yunju Park<br>
-			&nbsp;&nbsp;&nbsp; &copy; Yunju Park &nbsp;&nbsp;&nbsp; &reg;2022 all right reserved.</small>
+			&nbsp;&nbsp;&nbsp; &copy; Yunju Park &nbsp;&nbsp;&nbsp; &reg;2022 all rights reserved.</small>
 	</footer>
 
 </body>
