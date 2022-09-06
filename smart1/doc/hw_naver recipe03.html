@@ -3,29 +3,233 @@
 <head>
 <meta charset="UTF-8">
 <title>Naver 오늘 읽을만한 글</title>
-	
-
+	<style type="text/css">
+		body {
+			padding: 20px;
+		}
+		#bigtitle {
+			display: inline-block;
+			width: 200px;
+		}
+		#subtitle {
+			color: gray;
+		}
+		#righttitle {
+			display: inline-block;
+			width: 250px;
+			float: right;
+		}
+		.section {
+			display: inline-block;
+			width: 90%;
+		}
+		.button {
+			display: block;
+		}
+		#rbtn1, #rbtn2 {
+			width: 30px;
+			height: 30px;
+			border: 1px solid gray;
+			background-color: white;
+			border-radius: 20px;
+			z-index: 3;
+		}
+		#rbtn1 {
+			position: relative;
+			bottom: 35px;
+			left: -17px;
+		}
+		#rbtn2 { /* 위 rbtn1처럼 위치 설정하기!!! */
+			position: relative;
+			top: 0px;
+			right: 0px;
+			z-index: 0;
+		}
+		.btn {
+			width: 13%;
+			height: 40px;
+			background-color: white;
+			border: 1px solid gray;
+		}
+		.section1 {
+			display: block;
+			text-align: center;
+			margin: 20px 0
+		}
+		.section1-1, .section1-2 {
+			display: inline-block;
+			width: 40%;
+			text-align: left;
+		}
+		.section1-2 {
+			margin-left: 20px;
+		}
+		.section1-1text{}
+		.boldyellow {
+			color: #FFC314;
+		}
+		.add {
+			font-size: 12px;
+			color: lightgray;
+		}
+		.section2 {
+			display: block;
+			margin: 20px 0 0 0;
+			text-align: center; /* 왜 Section2가 전체 문서에서 가운데정렬이 안 되지??? */
+		}
+		.section2img {
+			width: 20%;
+			height: auto;
+		}
+		.section2-1text, .section2-2text, .section2-3text, .section2-4text {
+			display: inline-block;
+			width: 75%;
+			text-align: left;
+			margin: 0 0 20px 0;
+		}
+		.section3 {
+			display: block;
+			margin: 20px 0;
+			text-align: center; /* 왜 Section3가 전체 문서에서 가운데정렬이 안 되지??? */
+		}
+		.section3-1, .section3-2, .section3-3 {
+			display: inline-block;
+			width: 30%;
+			text-align: center;
+			float: left;
+		}
+		.section3img {
+			width: 90%;
+			height: auto;
+		}
+		.section3text {
+			text-align: left;
+			margin-left: 20px;
+		}
+	</style>
 </head>
 
 
 <body>
 	<header>
-	오늘 읽을만한 글 한 줄
-	
+	<h3 id="bigtitle">오늘 읽을만한 글 한 줄</h3>
+	<span id="subtitle">주제별로 분류된 다양한 글 모음</span>
+	<span id="righttitle"><b>668</b>개의 글 &boxv; 관심주제 설정</span>
 	</header>
 	
-	
-	<section>
+	<section class="section">
 		<div class="button">
+			<div style="font-size: 0pt;" id="menufr">
+				<input type="button" class="btn" id="btn1" value="엔터">
+				<input type="button" class="btn" id="btn2" value="스포츠">
+				<input type="button" class="btn" id="btn3" value="자동차">
+				<input type="button" class="btn" id="btn4" value="웹툰">
+				<input type="button" class="btn" id="btn5" value="경제">
+				<input type="button" class="btn" id="btn6" value="추천&CenterDot;구독">
+				<input type="button" class="btn" id="btn7" value="리빙">
+			</div>
+			<input type="button" class="rbtn" id="rbtn1" value="&LT;">
+			<input type="button" class="rbtn" id="rbtn2" value="&GT;">
 		</div>
 		<hr>
 		<div class="section1">
+			<div class="section1-1">
+				<img src="https://s.pstatic.net/static/www/mobile/edit/20220902/cropImg_728x360_104052374264724179.jpeg"
+						width="100%" height="auto">
+				<div class="section1-1text">
+					<div class="boldyellow"><b>[푸드클래스] 이진형 셰프</b></div>
+					<div><b>진한 풍미의 이탈리아 정통 수프로 가을맞이</b></div>
+					<div>갑자기 쌀쌀해진 요즘 날씨, <br>
+						달달하고 부드럽게 즐기기 좋은 메뉴</div>
+					<div class="add">#단호박 #수프만들기</div>
+				</div>
+			</div>
+			<div class="section1-2">
+				<img src="https://s.pstatic.net/static/www/mobile/edit/20220831/cropImg_728x360_103875205055161043.jpeg"
+						width="100%" height="auto">
+				<div class="section1-1text">
+					<div class="boldyellow"><b>[오늘의 푸드TV] 아재주부</b></div>
+					<div><b>애호박 두부찜, 예쁘고 건강한 채식 식단</b></div>
+					<div>비타민이 풍부한 애호박과 <br>
+						단백질이 풍부한 두부의 만남</div>
+					<div class="add">#손님상차림 #건두부요리</div>
+				</div>
+			</div>
 		</div>
 		<hr>
 		<div class="section2">
+			<div class="section2-1">
+				<img class="section2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220902_1095%2Fupload_1662110556147MUfUf.jpg%22&type=nf340_228"
+						>
+				<div class="section2-1text">
+					<div class="boldyellow"><b>레시피</b></div>
+					<div><b>분홍소시지요리 아이반찬 꽃계란프라이 만드는법</b></div>
+					<div>분홍소세지요리 꽃계란후라이 만드는 법 계란 요리를 참 좋아하는 곰둥이네에요. 특히 계란후라이는 
+						저도 아이들도 좋아해서 정말 자주 만들어 먹는데, 동그란 계란후라이 말고 ...</div>
+					<div class="add">곰둥이댁 &CenterDot; 1주일 전</div>
+				</div>
+			</div>
+			<div class="section2-2">
+				<img class="section2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220902_1095%2Fupload_1662110711072yPm12.jpg%22&type=nf340_228"
+						>
+				<div class="section2-2text">
+					<div class="boldyellow"><b>레시피</b></div>
+					<div><b>간단한요리 야채 옥수수전 만들기 아이반찬</b></div>
+					<div>야채 옥수수전 안녕하세요. 오늘은 아이들 반찬으로 혹은 영양만점 아이간식으로 좋은 야채옥수수전을 
+						만들어보았어요. 옥수수캔으로 간단하게 만들수 있고 또 맛도 스위트콘으...</div>
+					<div class="add">사진찍는엄마 &CenterDot; 1주일 전</div>
+				</div>
+			</div>
+			<div class="section2-3">
+				<img class="section2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220902_1095%2Fupload_1662110657083MHVoU.JPEG%22&type=nf340_228"
+						>
+				<div class="section2-3text">
+					<div class="boldyellow"><b>레시피</b></div>
+					<div><b>오이말랭이 진미채무침, 별미 반찬 만들기</b></div>
+					<div>오이말랭이 진미채무침, 별미 반찬 만들기 오이 말랭이를 이용해 별미 밑반찬을 하나 만들어봤어요. 
+						꼬들꼬들한 오이 말랭이로 만드는 #고추장진미 는 밥반찬으로도 좋지만 물이...</div>
+					<div class="add">수씨부인 &CenterDot; 1주일 전</div>
+				</div>
+			</div>
+			<div class="section2-4">
+				<img class="section2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220901_1095%2Fupload_1662032293575mpgze.JPEG%22&type=nf340_228"
+						>
+				<div class="section2-4text">
+					<div class="boldyellow"><b>레시피</b></div>
+					<div><b>두부계란찜! 영양만점 반찬~</b></div>
+					<div>안녕하세요. 아름드리입니다. ^^ 비가 그칠 듯.. 그칠 듯... 하면서도 그치지 않고 계속 내리고 
+						있는데요. ㅠㅠ 이웃님들 비 피해 없으신지 모르겠네요~ 오늘은 된장찌개 끓인다고 ...</div>
+					<div class="add">아름드리 &CenterDot; 3주 전</div>
+				</div>
+			</div>
 		</div>
 		<hr>
 		<div class="section3">
+			<div class="section3-1">
+				<img class="section3img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220831_1095%2Fupload_1661929625221xnL0l.jpg%22&type=nf464_260"
+					>
+				<div class="section3text">
+					<div><b>간단하게 만들어 먹는 한 끼 두부면 샐러드</b></div>
+					<div class="add">아재주부 &CenterDot; 1주일 전</div>
+				</div>
+			</div>
+			<div class="section3-2">
+				<img class="section3img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220823_1095%2Fupload_1661244373363koWCT.jpg%22&type=nf464_260"
+					>
+				<div class="section3text">
+					<div><b>국민 식재료 '계란' 냉장고 문에 보관하지 마세요</b></div>
+					<div class="add">백년밥상TV &CenterDot; 5개월 전</div>
+				</div>
+			</div>
+			<div class="section3-3">
+				<img class="section3img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220823_1095%2Fupload_1661244444242wt7eL.jpg%22&type=nf464_260"
+					>
+				<div class="section3text">
+					<div><b>LA갈비 속 뼛가루, 깨끗하게 세척하는 법</b></div>
+					<div class="add">백년밥상TV &CenterDot; 5개월 전</div>
+				</div>
+			</div>
+		
 		</div>
 	
 	</section>
