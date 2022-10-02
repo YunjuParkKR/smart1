@@ -55,13 +55,18 @@
 		#like1, #like2, #like3, #like4, #like5, #like6 {
 			display: inline-block;
 		}
-		
-		/* 프로필 이미지 테두리 타원형으로 처리하는 것 잘 모르겠음......
-		.box {
-			border-radius: 50%;
-			overflow: hidden;
-		} 
-		*/
+		.likeimg {
+			border-radius: 20px;
+			opacity: 0.5;
+			width: 200px;
+			height: 200px;
+		}
+		.likeimg:hover {
+			box-shadow: 5px 5px 3px mediumaquamarine;
+			opacity: 1.0;
+			width: 210px;
+			height: 210px;
+		}
 		
 		.subtitles {
 			text-shadow: 5px 5px 2px lightgray;
@@ -133,33 +138,33 @@
 		<h3 class="subtitles"><i>What I like</i></h3>
 		<div id="firstrow">
 			<figure id="like1">
-				<img src="../img/coffee.jpg" style="width: 200px; height: 200px" title="커피">
+				<img class="likeimg" id="likeimg1" src="../img/coffee.jpg" title="커피">
 				<figcaption>☕</figcaption>
 			</figure>
 			<figure id="like2">
-				<img src="../img/food.jpg" style="width: 200px; height: 200px" title="맛있는 것 먹기">
+				<img class="likeimg" id="likeimg2" src="../img/food.jpg" title="맛있는 것 먹기">
 				<figcaption>😋</figcaption>
 			</figure>
 			<figure id="like3"> <!-- '귀여운 건 한 번 더 보자: 이미지 클릭 시 토리 사진 한 장 더 뜨도록 설정하기.
 										a href를 중첩시키면 과연 두 개 다 정상작동 할까? 
 										클릭 시 사이트 등으로 이동하는 것이 아닌 토리 사진만 뜨도록 하려면 어떻게?-->
 				<a href="tori again.html" target="_blank" javascript:alert('귀여운 건 한 번 더 보자💛')">
-					<img src="../img/tori_02.jpg" style="width: 200px; height: 200px" title="동물"></a>
+					<img class="likeimg" id="likeimg3" src="../img/tori_02.jpg" title="동물"></a>
 				<figcaption>🐈</figcaption>
 			</figure>	
 		</div>
 		<br>
 		<div id="secondrow">
 			<figure id="like4">
-				<img src="../img/traveling.jpg" style="width: 200px; height: 200px" title="여행">
+				<img class="likeimg" id="likeimg4" src="../img/traveling.jpg" title="여행">
 				<figcaption>🛫</figcaption>
 			</figure>
 			<figure id="like5">	
-				<img src="../img/diving.jpg" style="width: 200px; height: 200px" title="액티비티">
+				<img class="likeimg" id="likeimg5" src="../img/diving.jpg" title="액티비티">
 				<figcaption>🏄‍♀️</figcaption>
 			</figure>
 			<figure id="like6">
-				<img src="../img/tennis.jpg" style="width: 200px; height: 200px" title="테니스">
+				<img class="likeimg" id="likeimg6" src="../img/tennis.jpg" title="테니스">
 				<figcaption>🎾</figcaption>
 			</figure>	
 		</div>
